@@ -26,54 +26,82 @@ body {
   position: relative;
 }
 
-.overlay {
-  /* background-color: rgba(0, 0, 0, 0.5); Adjust the color and opacity as needed */
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
-.content {
-  
-  padding: 40px 40px 0 40px;
-  color: #fff; /* Adjust text color as needed */
-}
+        /* Large screens (lg) */
+        @media (min-width: 1024px) {
+          .ml-32 {
+              margin-left: 32px;
+          }
+          .text-6xl {
+              font-size: 4rem;
+          }
+          .text-2xl {
+              font-size: 1.5rem;
+          }
+          .text-xl {
+              font-size: 1.25rem;
+          }
+          .section h2 {
+            font-size: 4rem;
+        }
+        .section p {
+            font-size: 1.5rem;
+        }
+          /* Add other lg-specific styles here */
+      }
 
-.image {
-  max-width: 500px;
-}
+      /* Medium screens (md) */
+      @media (min-width: 768px) and (max-width: 1023px) {
+          .ml-32 {
+              margin-left: 16px;
+          }
+          .text-6xl {
+              font-size: 3rem;
+          }
+          .text-2xl {
+              font-size: 1.25rem;
+          }
+          .text-xl {
+              font-size: 1rem;
+          }
+          .section h2 {
+            font-size: 3rem;
+        }
+        .section p {
+            font-size: 1.25rem;
+        }
+          /* Add other md-specific styles here */
+      }
 
-.content-white {
-  
-  text-align: center;
-  padding: 40px;
-  color: #000; /* Adjust text color as needed */
-}
-
-
-.flex {
-  display: flex;
-  flex-direction: row;
-  
-  align-items: center;
-} 
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  
-}
-
-li {
-  list-style: none;
-}
-
-ul li a {
-  color: white;
-}
-
+      /* Small screens (sm) */
+      @media (max-width: 767px) {
+          .ml-32 {
+              margin-left: 8px;
+          }
+          .text-6xl {
+              font-size: 2.5rem;
+          }
+          .text-2xl {
+              font-size: 1rem;
+          }
+          .text-xl {
+              font-size: 0.875rem;
+          }
+          .section h2 {
+                font-size: 2.5rem;
+            }
+            .section p {
+                font-size: 1rem;
+            }
+          /* Add other sm-specific styles here */
+      }
