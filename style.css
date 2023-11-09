@@ -10,7 +10,8 @@ body {
 }
 
 .section {
-  background-image: url('images/aksen\ 1\ -\ hero.png'), url('images/aksen\ 2\ -\ hero.png');
+  background-image: url("images/aksen\ 1\ -\ hero.png"),
+    url("images/aksen\ 2\ -\ hero.png");
   background-size: cover;
   background-position: top right, left;
   background-repeat: no-repeat, no-repeat;
@@ -19,7 +20,7 @@ body {
 }
 
 .section-white {
-  background-image: url('images/background\ pattern.png'); 
+  background-image: url("images/background\ pattern.png");
   background-size: cover;
   background-repeat: no-repeat, no-repeat;
   height: 100%; /* Adjust the height to your preference */
@@ -37,71 +38,71 @@ body {
   -webkit-transform: rotate(45deg);
 }
 
-        /* Large screens (lg) */
-        @media (min-width: 1024px) {
-          .ml-32 {
-              margin-left: 32px;
-          }
-          .text-6xl {
-              font-size: 4rem;
-          }
-          .text-2xl {
-              font-size: 1.5rem;
-          }
-          .text-xl {
-              font-size: 1.25rem;
-          }
-          .section h2 {
-            font-size: 4rem;
-        }
-        .section p {
-            font-size: 1.5rem;
-        }
-          /* Add other lg-specific styles here */
-      }
+/* Large screens (lg) */
+@media (min-width: 1024px) {
+  .ml-32 {
+    margin-left: 32px;
+  }
+  .text-6xl {
+    font-size: 4rem;
+  }
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  .section h2 {
+    font-size: 4rem;
+  }
+  .section p {
+    font-size: 1.5rem;
+  }
+  /* Add other lg-specific styles here */
+}
 
-      /* Medium screens (md) */
-      @media (min-width: 768px) and (max-width: 1023px) {
-          .ml-32 {
-              margin-left: 16px;
-          }
-          .text-6xl {
-              font-size: 3rem;
-          }
-          .text-2xl {
-              font-size: 1.25rem;
-          }
-          .text-xl {
-              font-size: 1rem;
-          }
-          .section h2 {
-            font-size: 3rem;
-        }
-        .section p {
-            font-size: 1.25rem;
-        }
-          /* Add other md-specific styles here */
-      }
+/* Medium screens (md) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ml-32 {
+    margin-left: 16px;
+  }
+  .text-6xl {
+    font-size: 3rem;
+  }
+  .text-2xl {
+    font-size: 1.25rem;
+  }
+  .text-xl {
+    font-size: 1rem;
+  }
+  .section h2 {
+    font-size: 3rem;
+  }
+  .section p {
+    font-size: 1.25rem;
+  }
+  /* Add other md-specific styles here */
+}
 
-      /* Small screens (sm) */
-      @media (max-width: 767px) {
-          .ml-32 {
-              margin-left: 8px;
-          }
-          .text-6xl {
-              font-size: 2.5rem;
-          }
-          .text-2xl {
-              font-size: 1rem;
-          }
-          .text-xl {
-              font-size: 0.875rem;
-          }
-          .section h2 {
-                font-size: 2.5rem;
-            }
-            .section p {
-                font-size: 1rem;
-            }
-          /* Add other sm-specific styles here */
-      }
+/* Small screens (sm) */
+@media (max-width: 767px) {
+  .ml-32 {
+    margin-left: 8px;
+  }
+  .text-6xl {
+    font-size: 2.5rem;
+  }
+  .text-2xl {
+    font-size: 1rem;
+  }
+  .text-xl {
+    font-size: 0.875rem;
+  }
+  .section h2 {
+    font-size: 2.5rem;
+  }
+  .section p {
+    font-size: 1rem;
+  }
+  /* Add other sm-specific styles here */
+}
