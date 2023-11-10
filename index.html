@@ -18,17 +18,17 @@
   </head>
   <body>
     <section class="section">
-      <nav class="w-full z-20 top-0 left-0 border-b border-gray-200">
+      <nav class="w-full px-5 z-20 top-0 left-0 border-b border-gray-200 xl:px-40 lg:px-5 md:justify-center md:pl-12">
         <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-6"
+          class="flex flex-wrap items-center justify-between py-6"
         >
-          <img src="images/Logo.png" class="w-60 mr-3" alt="Navbar Logo" />
-          <div class="flex md:order-2">
+        <img src="images/Logo.png" class="w-60 md:hidden" alt="Navbar Logo" />
+          <div class="flex md:hidden">
             <button
-              data-collapse-toggle="navbar-sticky"
+              data-collapse-toggle="navbar"
               type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar"
               aria-expanded="false"
             >
               <span class="sr-only">Open main menu</span>
@@ -50,9 +50,10 @@
             </button>
           </div>
           <div
-            class="items-center hidden w-full md:flex md:w-auto md:order-1"
-            id="navbar-sticky"
+            class="items-center hidden w-full md:flex md:w-auto"
+            id="navbar"
           >
+          <img src="images/Logo.png" class="w-60 mr-3" alt="Navbar Logo" />
             <ul
               class="flex flex-col p-4 md:p-0 mt-4 font-medium border md:flex-row md:space-x-8 md:mt-0 md:border-0 xl:border-l-2"
             >
@@ -77,25 +78,26 @@
                 >
               </li>
             </ul>
-            <div class="xl:ml-80">
-              <button
-                type="button"
-                class="text-white font-medium rounded-lg text-sm px-8 py-3 text-center mr-3 md:mr-0"
-              >
-                Log In
-              </button>
-              <button
-                type="button"
-                class="text-white bg-purple-500 font-medium rounded-lg text-sm px-8 py-3 text-center mr-3 md:mr-0"
-              >
-                Sign Up
-              </button>
-            </div>
+            
+          </div>
+          <div class=" hidden lg:block">
+            <button
+              type="button"
+              class="text-white font-medium rounded-lg text-sm px-8 py-3 text-center mr-3 md:mr-0"
+            >
+              Log In
+            </button>
+            <button
+              type="button"
+              class="text-white bg-purple-500 font-medium rounded-lg text-sm px-8 py-3 text-center mr-3 md:mr-0"
+            >
+              Sign Up
+            </button>
           </div>
         </div>
       </nav>
 
-      <div>
+      <div class="">
         <div
           class="flex flex-col items-center px-2 pt-16 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-white"
         >
@@ -456,8 +458,8 @@
           <span>Yearly</span>
         </label>
         <div class="py-5 text-gray-800">
-          <div class="px-4 xl:px-3 mx-auto">
-            <div class="flex flex-wrap items-stretch">
+          <div class="px-4 xl:px-20 mx-auto">
+            <div class="flex flex-wrap items-stretch xl:px-10">
               <div class="w-full mb-8 px-4 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
                 <div
                   class="flex flex-grow flex-col p-6 space-y-6 rounded-xl shadow sm:p-8 bg-white"
@@ -465,7 +467,7 @@
                   <div class="space-y-2">
                     <p class="text-center text-6xl font-semibold">Free</p>
                   </div>
-                  <p class="mt-3 leadi font-medium text-gray-400 text-center">
+                  <p class="mt-3 leadi font-medium text-gray-400 text-center xl:mx-5">
                     Perfect for small business and looking to dip their toe s
                     into email marketing
                   </p>
@@ -570,7 +572,7 @@
                       Pro
                     </p>
                   </div>
-                  <p class="text-center mt-3 text-white font-medium max-w-xl">
+                  <p class="text-center mt-3 text-white font-medium xl:mx-5">
                     Ideal for growing business with moderate email marketing
                     needs
                   </p>
@@ -672,7 +674,7 @@
                   <div class="space-y-2">
                     <p class="text-6xl text-center font-semibold">Business</p>
                   </div>
-                  <p class="mt-3 leadi text-gray-400 font-medium text-center">
+                  <p class="mt-3 leadi text-gray-400 font-medium text-center xl:mx-5">
                     Tailored solutions designed to meet the unique requirements
                   </p>
                   <span
@@ -836,7 +838,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2 pl-10 text-sm gap-x-1 gap-y-8 lg:w-4/6 sm:grid-cols-4"
+          class="grid grid-cols-2 px-6 text-sm gap-x-1 gap-y-8 lg:w-4/6 sm:grid-cols-4"
         >
           <div class="space-y-5">
             <h3 class="text-gray-200 font-semibold text-2xl">Product</h3>
